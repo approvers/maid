@@ -5,6 +5,7 @@ clean:
 	rm -rf ./bin
 
 restore:
+	go mod download
 	go mod vendor
 
 build:
