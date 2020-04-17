@@ -18,6 +18,7 @@ func (bot *Bot) Initialize(token string) *Bot {
 	}
 
 	bot.session = session
+	bot.RegisterHandlers()
 
 	return bot
 }
