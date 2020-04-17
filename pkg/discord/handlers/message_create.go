@@ -11,7 +11,7 @@ func OnMessageCreate(session *discordgo.Session, event *discordgo.MessageCreate)
 	}
 
 	fmt.Printf(
-		"[%s:%s] %s: %s",
+		"[%s:%s] %s: %s\n",
 		event.GuildID,
 		event.ChannelID,
 		event.Author.Username,
