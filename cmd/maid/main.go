@@ -1,9 +1,12 @@
 package main
 
 import (
-	"fmt"
+	"github.com/brokenManager/maid/pkg/async"
+	"github.com/brokenManager/maid/pkg/discord"
 )
 
 func main() {
-	fmt.Println("Hello, world!")
+	bot := discord.CreateBot("")
+	bot.Start()
+	async.Wait()
 }
