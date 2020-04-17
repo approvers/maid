@@ -1,6 +1,6 @@
 package discord
 
-func CreateBot(token string) Bot {
+func CreateBot(token string) *Bot {
 	bot := Bot{}
-	return *bot.Initialize(token)
+	return bot.Initialize(token)
 }
